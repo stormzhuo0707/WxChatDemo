@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/photoImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:scaleType="fitXY"
+            android:src="@drawable/wx_login_reigister" />
+
+        <Button
+            android:id="@+id/main_login_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@id/photoImageView"
+            android:layout_alignBottom="@id/photoImageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_style_green"
+            android:onClick="welcome_login"
+            android:text="登录"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_regist_btn"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/photoImageView"
+            android:layout_alignBottom="@id/photoImageView"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_style_white"
+            android:onClick="welcome_register"
+            android:text="注册"
+            android:textColor="#00FF00"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:onClick="rigister_activity_back"
+        android:src="@drawable/backpay" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:text="手机号注册"
+        android:textColor="@color/loginText"
+        android:textSize="25sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp" >
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_register" />
+
+        <EditText
+            android:id="@+id/reg_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_photo"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="例如：陈晨"
+            android:paddingLeft="120dp"
+            android:singleLine="true"
+            android:textColorHint="#DDDDDD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:layout_alignLeft="@id/reg_name"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:gravity="center_vertical"
+            android:text="昵称"
+            android:textColor="#353535"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/reg_diver1"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/input_dvier" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="手机号"
+            android:textColor="@color/loginText"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/reg_phone"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:background="@null"
+            android:hint="请填写手机号"
+            android:singleLine="true"
+            android:textColorHint="@color/textColorHint"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/reg_diver2"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:background="@color/input_dvier" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="密码"
+            android:textColor="@color/loginText"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/reg_passwd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:background="@null"
+            android:hint="请填写密码"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:textColorHint="@color/textColorHint"
+            android:textCursorDrawable="@drawable/edit_cursor_color"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/reg_diver3"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="17dp"
+        android:background="@color/input_dvier" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/reg_button"
+            android:layout_width="321dp"
+            android:layout_height="48dp"
+            android:background="@drawable/login_button_shape"
+            android:text="注册"
+            android:textColor="@color/loginButtonText"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
+
